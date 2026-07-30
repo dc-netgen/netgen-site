@@ -1,177 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Netgen progetta soluzioni VoIP, networking, Wi-Fi professionale e infrastrutture IT per aziende.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Netgen progetta soluzioni VoIP, networking, Wi-Fi professionale e sicurezza per aziende moderne.">
+  <meta name="theme-color" content="#1f2328">
+  <meta property="og:title" content="Netgen | Infrastrutture che fanno comunicare il tuo business">
+  <meta property="og:description" content="VoIP, networking, Wi-Fi professionale e sicurezza: un unico partner per la tua infrastruttura IT.">
+  <meta property="og:type" content="website">
   <title>Netgen | VoIP, Networking e Infrastrutture IT</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+
   <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Netgen home">
-        <span class="brand-mark">N</span>
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Netgen, torna alla home">
+        <svg class="brand-symbol" viewBox="0 0 44 44" aria-hidden="true">
+          <path d="M9 28.5 17.7 13c1.7-3 6-3.2 7.9-.3L35 27.4c2.2 3.5-.3 8.1-4.4 8.1h-1.2c-1.7 0-3.3-.9-4.2-2.4l-6.5-10.2-4.3 7.7c-1 1.7-3.3 2.3-5 1.3A2.7 2.7 0 0 1 9 28.5Z"/>
+        </svg>
         <span>netgen</span>
       </a>
 
-      <button class="menu-toggle" aria-label="Apri il menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-controls="main-nav" aria-expanded="false">
+        <span></span><span></span>
       </button>
 
-      <nav class="main-nav" aria-label="Navigazione principale">
+      <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
         <a href="#servizi">Servizi</a>
+        <a href="#metodo">Metodo</a>
         <a href="#azienda">Azienda</a>
-        <a href="#vantaggi">Perché Netgen</a>
-        <a class="nav-cta" href="#contatti">Contatti</a>
+        <a class="nav-contact" href="#contatti">Parliamone <span>↗</span></a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-      <div class="container hero-grid">
+    <section class="hero section-dark">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="container hero-layout">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Tecnologia per aziende connesse</p>
-          <h1>Connessioni solide.<br><span>Comunicazioni senza limiti.</span></h1>
-          <p class="hero-text">Progettiamo soluzioni VoIP, reti e infrastrutture IT affidabili, sicure e costruite sulle esigenze della tua azienda.</p>
+          <p class="kicker"><span></span> Infrastrutture IT per aziende connesse</p>
+          <h1>La tecnologia<br>che <em>fa rete.</em></h1>
+          <p class="hero-lead">Progettiamo VoIP, networking, Wi-Fi e sicurezza come un unico ecosistema: più semplice da usare, più solido da gestire.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#servizi">Scopri i servizi</a>
-            <a class="button button-secondary" href="#contatti">Richiedi una consulenza</a>
+            <a class="button button-accent magnetic" href="#contatti">Parliamo del tuo progetto <span>↗</span></a>
+            <a class="button button-ghost" href="#servizi">Esplora i servizi</a>
           </div>
-          <div class="hero-points">
-            <span>Soluzioni su misura</span>
-            <span>Assistenza competente</span>
-            <span>Tecnologie scalabili</span>
+          <div class="hero-trust" aria-label="Punti di forza">
+            <span>Progettazione su misura</span>
+            <span>Un unico referente</span>
+            <span>Supporto continuativo</span>
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="network-card">
-            <div class="status-row">
-              <span class="status-dot"></span>
-              <span>Infrastruttura operativa</span>
-            </div>
-            <div class="network-map">
-              <span class="node node-main"></span>
-              <span class="node node-a"></span>
-              <span class="node node-b"></span>
-              <span class="node node-c"></span>
-              <span class="node node-d"></span>
-              <span class="line line-a"></span>
-              <span class="line line-b"></span>
-              <span class="line line-c"></span>
-              <span class="line line-d"></span>
-            </div>
-            <div class="stats-row">
-              <div><strong>99,9%</strong><span>Disponibilità</span></div>
-              <div><strong>24/7</strong><span>Monitoraggio</span></div>
-              <div><strong>Secure</strong><span>Network</span></div>
-            </div>
+        <div class="system-visual reveal" aria-label="Visualizzazione astratta di un'infrastruttura di rete operativa">
+          <div class="visual-topbar">
+            <span class="live"><i></i> Network online</span>
+            <span>NETGEN / CORE</span>
+          </div>
+          <div class="visual-canvas">
+            <div class="pulse-ring ring-a"></div>
+            <div class="pulse-ring ring-b"></div>
+            <div class="core-node"><span>NG</span></div>
+            <div class="satellite sat-a"><i></i><span>VoIP</span></div>
+            <div class="satellite sat-b"><i></i><span>LAN</span></div>
+            <div class="satellite sat-c"><i></i><span>Wi-Fi</span></div>
+            <div class="satellite sat-d"><i></i><span>Security</span></div>
+            <svg viewBox="0 0 520 400" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M260 200 C190 130, 128 104, 72 72"/>
+              <path d="M260 200 C340 128, 402 108, 456 76"/>
+              <path d="M260 200 C182 270, 132 304, 78 334"/>
+              <path d="M260 200 C344 268, 394 300, 454 332"/>
+            </svg>
+          </div>
+          <div class="visual-footer">
+            <div><strong>Voce</strong><span>integrata</span></div>
+            <div><strong>Rete</strong><span>ottimizzata</span></div>
+            <div><strong>Dati</strong><span>protetti</span></div>
           </div>
         </div>
       </div>
+      <a class="scroll-cue" href="#servizi" aria-label="Scorri ai servizi"><span></span> Scopri Netgen</a>
     </section>
 
-    <section class="section" id="servizi">
+    <section class="section services" id="servizi">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">I nostri servizi</p>
-          <h2>Un’infrastruttura IT semplice da usare, solida da gestire.</h2>
-          <p>Seguiamo ogni progetto dalla consulenza iniziale all’installazione, fino all’assistenza continuativa.</p>
+        <div class="section-intro reveal">
+          <div>
+            <p class="kicker dark"><span></span> Cosa facciamo</p>
+            <h2>Un’unica regia.<br><em>Quattro competenze.</em></h2>
+          </div>
+          <p>La comunicazione funziona davvero quando ogni elemento parla con gli altri. Per questo progettiamo l’infrastruttura nel suo insieme, non come una somma di prodotti.</p>
         </div>
 
-        <div class="services-grid">
-          <article class="service-card reveal">
-            <div class="service-icon">01</div>
-            <h3>VoIP e comunicazione</h3>
-            <p>Centralini virtuali, numerazioni, interni, telefoni IP e sistemi evoluti per lavorare ovunque.</p>
-            <a href="#contatti">Parliamone <span>→</span></a>
+        <div class="service-list">
+          <article class="service-row reveal">
+            <div class="service-number">01</div>
+            <div class="service-title"><h3>VoIP</h3><span>Comunicazione aziendale</span></div>
+            <p>Centralini virtuali, telefoni IP, numerazioni e flussi di chiamata pensati per lavorare bene ovunque.</p>
+            <div class="service-icon" aria-hidden="true">⌁</div>
           </article>
-          <article class="service-card reveal">
-            <div class="service-icon">02</div>
-            <h3>Networking</h3>
-            <p>Reti LAN e WAN, switching, routing, segmentazione e configurazioni pensate per crescere nel tempo.</p>
-            <a href="#contatti">Parliamone <span>→</span></a>
+          <article class="service-row reveal">
+            <div class="service-number">02</div>
+            <div class="service-title"><h3>Networking</h3><span>Reti affidabili e scalabili</span></div>
+            <p>LAN, WAN, switching, routing e segmentazione progettati per sostenere persone, sedi e applicazioni.</p>
+            <div class="service-icon" aria-hidden="true">◎</div>
           </article>
-          <article class="service-card reveal">
-            <div class="service-icon">03</div>
-            <h3>Wi-Fi professionale</h3>
-            <p>Copertura stabile e sicura per uffici, strutture ricettive, capannoni e ambienti ad alta densità.</p>
-            <a href="#contatti">Parliamone <span>→</span></a>
+          <article class="service-row reveal">
+            <div class="service-number">03</div>
+            <div class="service-title"><h3>Wi-Fi</h3><span>Copertura professionale</span></div>
+            <p>Analisi, copertura e gestione per uffici, strutture ricettive, magazzini e ambienti ad alta densità.</p>
+            <div class="service-icon" aria-hidden="true">◒</div>
           </article>
-          <article class="service-card reveal">
-            <div class="service-icon">04</div>
-            <h3>Sicurezza e firewall</h3>
-            <p>Protezione della rete, accessi remoti, VPN e controllo del traffico per ridurre i rischi operativi.</p>
-            <a href="#contatti">Parliamone <span>→</span></a>
+          <article class="service-row reveal">
+            <div class="service-number">04</div>
+            <div class="service-title"><h3>Security</h3><span>Protezione della rete</span></div>
+            <p>Firewall, VPN, accessi e policy per proteggere l’operatività senza complicare il lavoro quotidiano.</p>
+            <div class="service-icon" aria-hidden="true">◇</div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="azienda">
-      <div class="container split-layout">
-        <div class="about-copy reveal">
-          <p class="eyebrow">Chi siamo</p>
-          <h2>La tecnologia giusta, senza complicazioni inutili.</h2>
-          <p>Netgen affianca aziende e professionisti nella progettazione di sistemi di comunicazione e reti affidabili. Analizziamo ciò che serve davvero, eliminiamo la complessità e realizziamo soluzioni facili da gestire.</p>
-          <a class="text-link" href="#contatti">Conosciamoci <span>→</span></a>
+    <section class="section manifesto section-orange" id="azienda">
+      <div class="container manifesto-grid">
+        <div class="manifesto-label reveal">
+          <p class="kicker ink"><span></span> Il nostro approccio</p>
+          <span class="big-index">01 — 04</span>
         </div>
-
-        <div class="about-panel reveal">
-          <div class="about-item">
-            <span>01</span>
-            <div><h3>Analisi</h3><p>Partiamo dall’infrastruttura esistente e dagli obiettivi reali.</p></div>
-          </div>
-          <div class="about-item">
-            <span>02</span>
-            <div><h3>Progettazione</h3><p>Costruiamo una soluzione chiara, sicura e sostenibile.</p></div>
-          </div>
-          <div class="about-item">
-            <span>03</span>
-            <div><h3>Assistenza</h3><p>Restiamo un punto di riferimento anche dopo l’installazione.</p></div>
-          </div>
+        <div class="manifesto-copy reveal">
+          <h2>Non vendiamo scatole.<br><em>Costruiamo continuità.</em></h2>
+          <p>Partiamo dal modo in cui lavori, traduciamo le esigenze in un progetto chiaro e restiamo presenti dopo l’installazione. La tecnologia deve togliere attrito, non aggiungerne.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="vantaggi">
+    <section class="section process section-dark" id="metodo">
       <div class="container">
-        <div class="section-heading compact reveal">
-          <p class="eyebrow">Perché Netgen</p>
-          <h2>Più controllo. Meno interruzioni.</h2>
+        <div class="section-intro light reveal">
+          <div>
+            <p class="kicker"><span></span> Come lavoriamo</p>
+            <h2>Dal primo confronto<br>alla rete <em>operativa.</em></h2>
+          </div>
+          <p>Un percorso semplice, con responsabilità chiare e una visione completa dell’infrastruttura.</p>
         </div>
-        <div class="benefits-grid">
-          <div class="benefit reveal"><strong>01</strong><h3>Approccio su misura</h3><p>Nessun pacchetto standard: ogni soluzione nasce dalle esigenze del cliente.</p></div>
-          <div class="benefit reveal"><strong>02</strong><h3>Un unico referente</h3><p>Voce, rete e sicurezza vengono gestite con una visione coordinata.</p></div>
-          <div class="benefit reveal"><strong>03</strong><h3>Crescita senza vincoli</h3><p>Le tecnologie adottate possono evolvere insieme alla tua organizzazione.</p></div>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span>01</span><h3>Ascolto</h3><p>Obiettivi, criticità, strumenti esistenti e prospettive di crescita.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>02</span><h3>Progetto</h3><p>Architettura, tecnologie e priorità raccolte in una soluzione leggibile.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>03</span><h3>Attivazione</h3><p>Installazione, configurazione e passaggio in produzione coordinato.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>04</span><h3>Supporto</h3><p>Assistenza e sviluppo continuo per accompagnare nuove esigenze.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contatti">
-      <div class="container contact-card reveal">
-        <div>
-          <p class="eyebrow">Iniziamo un progetto</p>
-          <h2>Parlaci della tua infrastruttura.</h2>
-          <p>Raccontaci cosa vuoi migliorare: ti aiuteremo a individuare la soluzione più adatta.</p>
+    <section class="section statement">
+      <div class="container statement-wrap reveal">
+        <p class="statement-small">Il risultato che cerchiamo</p>
+        <p class="statement-big">Una rete che non noti.<br><span>Perché funziona.</span></p>
+      </div>
+    </section>
+
+    <section class="contact" id="contatti">
+      <div class="container contact-panel reveal">
+        <div class="contact-copy">
+          <p class="kicker ink"><span></span> Iniziamo da una conversazione</p>
+          <h2>Raccontaci cosa<br>deve funzionare <em>meglio.</em></h2>
+          <p>Voce, rete, Wi-Fi o sicurezza: mettiamo ordine nel quadro e troviamo il prossimo passo concreto.</p>
         </div>
-        <a class="button button-light" href="mailto:info@netgen.it">info@netgen.it</a>
+        <div class="contact-actions">
+          <a class="button button-ink magnetic" href="mailto:info@netgen.it">info@netgen.it <span>↗</span></a>
+          <p>Sostituisci questo indirizzo con l’e-mail aziendale definitiva.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <a class="brand footer-brand" href="#top"><span class="brand-mark">N</span><span>netgen</span></a>
-      <p>VoIP · Networking · Infrastrutture IT</p>
-      <p>© <span id="year"></span> Netgen</p>
+  <footer class="site-footer section-dark">
+    <div class="container footer-grid">
+      <a class="brand footer-brand" href="#top">
+        <svg class="brand-symbol" viewBox="0 0 44 44" aria-hidden="true"><path d="M9 28.5 17.7 13c1.7-3 6-3.2 7.9-.3L35 27.4c2.2 3.5-.3 8.1-4.4 8.1h-1.2c-1.7 0-3.3-.9-4.2-2.4l-6.5-10.2-4.3 7.7c-1 1.7-3.3 2.3-5 1.3A2.7 2.7 0 0 1 9 28.5Z"/></svg>
+        <span>netgen</span>
+      </a>
+      <p>VoIP · Networking · Wi-Fi · Security</p>
+      <div class="footer-links"><a href="#servizi">Servizi</a><a href="#metodo">Metodo</a><a href="#contatti">Contatti</a></div>
+      <p class="copyright">© <span id="year"></span> Netgen. Tutti i diritti riservati.</p>
     </div>
   </footer>
 
